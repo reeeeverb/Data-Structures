@@ -84,6 +84,7 @@ namespace ll{
             }else{
                 printf("Node = %s\n",this->value);
             }
+            printf("-----------------\n");
         }
     };
 
@@ -129,14 +130,25 @@ namespace ll{
         return root;
     }
 }
+/*
+int main()
+{
+    char old_value[] = "hello";
+    char new_value[] = "bye";
+    char value[] = "cokc";
 
-    /*
-    int main()
-    {
-        node* root = create_list(5);
-        char new_value[] = "hello";
-        (*root)[1]->value = new_value;
-        cout << (*root)[0]->value << "\n";
-        cout << (*root)[1]->value << "\n";
-    }
-    */
+    ll::node* root = ll::create_list(5,old_value);
+    ll::node* root2 = ll::create_list(5,new_value);
+
+    ll::node* new_node = ll::create_node(NULL,value);
+    (*root)+=(root2);
+
+    root->insert(3,new_node);
+
+    root->print();
+
+    root->remove(10);
+
+    root->print();
+}
+*/

@@ -1,24 +1,11 @@
 #include <iostream>
-#include "linked-list.cpp"
+#include "array.cpp"
 
 int main()
 {
-    char old_value[] = "hello";
-    char new_value[] = "bye";
-    char value[] = "cokc";
-
-    ll::node* root = ll::create_list(5,old_value);
-    ll::node* root2 = ll::create_list(5,new_value);
-
-    ll::node* new_node = ll::create_node(NULL,value);
-    (*root)+=(root2);
-
-    root->insert(3,new_node);
-
-    root->print();
-
-    root->remove(10);
-
-    root->print();
+    arr::arr* thing = arr::create_array(5);
+    thing->set(1,40); 
+    int value = (*thing)[1];
+    cout << (*thing)[1];
 }
 

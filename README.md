@@ -5,6 +5,8 @@
     - [ ] Circular
 - [x] Direct Access Hash Table
 - [ ] Other Hash Tables
+- [ ] Array
+    - [ ] Variable Length 
 - [ ] Stack
 - [ ] Heap
 
@@ -16,3 +18,7 @@
     - [x] Delete
     - [ ] Optimizations
     - [ ] Maximum O(n) time
+- Array
+    - [x] Create
+    - [ ] Update
+    - [ ] Print
