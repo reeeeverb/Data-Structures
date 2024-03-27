@@ -32,8 +32,10 @@ namespace ll{
 
         void insert(unsigned int pos, node* new_table){
             assert(root && new_table->root && pos < size);
-            if (pos > size)
-                node* next = (*this)[pos];
+            node* next = NULL;
+            if (pos < size){
+                next = (*this)[pos];
+            }
             if (pos > 0){
                 node* prev = (*this)[pos-1];
                 prev->next_node = new_table;
@@ -44,10 +46,22 @@ namespace ll{
                 new_table->size += this->size;
                 this->size = -1;
             }
-            if (pos < size){
+            if (next != NULL){
                 new_table->tail->next_node = next;
             }else
                 this->tail = new_table->tail;
+        }
+
+        void print(){
+            if(root){
+                node* current = this;
+                for (int i = 0; i < this->size; i++){
+                    printf("Node %d = %s\n",i,current->value);
+                    current = current->next_node;
+                }
+            }else{
+                printf("Node = %s\n",this->value);
+            }
         }
     };
 

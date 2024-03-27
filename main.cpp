@@ -15,6 +15,6 @@ int main()
 
     root->insert(3,new_node);
 
-    cout << (*root)[3]->value << "\n" << new_node->value;
+    root->print();
 }
 
