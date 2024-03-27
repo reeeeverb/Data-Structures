@@ -1,7 +1,17 @@
 # Data Structures
 - [x] Linked List
+    - [ ] Doubly
+    - [ ] Multiply  
+    - [ ] Circular
 - [x] Direct Access Hash Table
 - [ ] Other Hash Tables
-- [ ] Two Way Linked List
 - [ ] Stack
 - [ ] Heap
+
+
+## TO DO
+- Linked Lists
+    - Insert
+    - Delete
+    - Optimizations
+    - Maximum O(n) time
