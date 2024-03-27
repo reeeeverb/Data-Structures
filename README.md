@@ -5,10 +5,12 @@
     - [ ] Circular
 - [x] Direct Access Hash Table
 - [ ] Other Hash Tables
-- [ ] Array
+- [x] Array
     - [ ] Variable Length 
 - [ ] Stack
 - [ ] Heap
+- [ ] Binary Tree
+    - [ ] Unbounded Branching
 
 
 ## TO DO

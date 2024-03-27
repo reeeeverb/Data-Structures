@@ -1,15 +1,20 @@
 #include <iostream>
-#include "array.cpp"
+#include "binary-tree.cpp"
 
 int main()
 {
-    arr::Arr thing(6);
-    thing.set(0,10); 
-    thing.set(1,20); 
-    thing.set(2,30); 
-    thing.set(3,40); 
-    thing.set(4,50); 
-    thing.set(5,60); 
+    char input[] = "world";
+    char left_in[] = "hello";
+    char right_in[] = "cokc";
+
+    bt::node thing(input);
+    bt::node left(left_in);
+    bt::node right(right_in);
+    
+    thing.add_right_c(&right);
+    thing.add_left_c(&left);
+
+
     thing.print();
 }
 
