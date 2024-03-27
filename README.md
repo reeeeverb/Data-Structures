@@ -13,6 +13,6 @@
 - Linked Lists
     - [x] Insert
     - [x] Print
-    - [ ] Delete
+    - [x] Delete
     - [ ] Optimizations
     - [ ] Maximum O(n) time

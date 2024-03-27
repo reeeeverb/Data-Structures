@@ -52,7 +52,29 @@ namespace ll{
                 this->tail = new_table->tail;
         }
 
+        void remove(unsigned int pos){
+            assert(root && pos < this->size);
+            node* del_node = NULL;
+            if (pos == 0){
+                this->value = next_node->value;
+                del_node = next_node;
+                this->next_node = next_node->next_node;
+            }else if(pos == size-1){
+                node* prev_node = (*this)[pos-1];
+                del_node = tail;
+                tail = prev_node;
+                prev_node->next_node = NULL;
+            }else{
+                node* prev_node = (*this)[pos-1];
+                del_node = prev_node->next_node;
+                prev_node->next_node = del_node->next_node;
+            }
+            free(del_node);
+            this->size--;
+        }
+
         void print(){
+            printf("-----------------\n");
             if(root){
                 node* current = this;
                 for (int i = 0; i < this->size; i++){

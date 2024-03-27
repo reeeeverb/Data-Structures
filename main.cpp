@@ -16,5 +16,9 @@ int main()
     root->insert(3,new_node);
 
     root->print();
+
+    root->remove(10);
+
+    root->print();
 }
 
