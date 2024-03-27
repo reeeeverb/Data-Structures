@@ -29,6 +29,26 @@ namespace ll{
             new_list -> size = 0;
             return this;
         }
+
+        void insert(unsigned int pos, node* new_table){
+            assert(root && new_table->root && pos < size);
+            if (pos > size)
+                node* next = (*this)[pos];
+            if (pos > 0){
+                node* prev = (*this)[pos-1];
+                prev->next_node = new_table;
+                new_table->root = false;
+                this->size += new_table->size;
+                new_table->size = -1;
+            }else{
+                new_table->size += this->size;
+                this->size = -1;
+            }
+            if (pos < size){
+                new_table->tail->next_node = next;
+            }else
+                this->tail = new_table->tail;
+        }
     };
 
     node* create_node(node* prev, char* value, int size)

@@ -11,7 +11,7 @@
 
 ## TO DO
 - Linked Lists
-    - Insert
-    - Delete
-    - Optimizations
-    - Maximum O(n) time
+    - [x] Insert
+    - [ ] Delete
+    - [ ] Optimizations
+    - [ ] Maximum O(n) time
